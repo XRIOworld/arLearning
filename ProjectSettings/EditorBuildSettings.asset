@@ -6,16 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Assets/Scenes/ARfoundation_base.unity
-    guid: 7f2fa40e6ee4b8e48909761e901022e9
+    path: Assets/_Assets/Scenes/AR Learning_multi images.unity
+    guid: 26ff53e7e69324daf82f6eeac2b3d7e0
   m_configObjects:
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: c3b49e4bd34b99a41ab0c8d9b8ce14c0,
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af,
       type: 2}
-    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 7e747986c6753934db3adcb8ebf0fc03,
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 0465d33c6aee55f44b0237db8b0e0259,
       type: 2}
-    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 89b3ba91e0bf86241a8570c284301a0d,
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: c199e683398494f32b4cde18e73ab731,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f00d611aef1ccf14c9219e1e18a54ad2,
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 0b53a025a635a4393ba0b49822242280,
       type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9078ab7ab1f4b7a4188c15f5cb475c52,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3fd4fc0127790db4bae83f7b77da8d45,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b07c4ba7650be4c25b3d0c497e7e2bb8,
       type: 2}
