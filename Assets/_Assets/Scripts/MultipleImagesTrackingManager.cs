@@ -52,26 +52,30 @@ public class MultipleImagesTrackingManager : MonoBehaviour
             UpdateTrackedImage(trackedImage);
         }
 
-        // Do similar logging for eventArgs.updated and eventArgs.removed
-        // ...
+        foreach (ARTrackedImage trackedImage in eventArgs.updated)
+        {
+            UpdateTrackedImage(trackedImage);
+        }
+
+        foreach (ARTrackedImage trackedImage in eventArgs.removed)
+        {
+            _arObjects[trackedImage.referenceImage.name].SetActive(false);
+        }
+
+
     }
 
     private void UpdateTrackedImage(ARTrackedImage trackedImage)
     {
         string imageName = trackedImage.referenceImage.name;
-
-        if (string.IsNullOrEmpty(imageName) || !_arObjects.ContainsKey(imageName))
-        {
-            Debug.LogError("Invalid or missing image name: " + imageName);
-            return;
-        }
-
         GameObject arObject = _arObjects[imageName];
 
         if (trackedImage.trackingState != TrackingState.None && trackedImage.trackingState != TrackingState.Limited)
         {
             arObject.SetActive(true);
             arObject.transform.position = trackedImage.transform.position;
+            arObject.transform.rotation = trackedImage.transform.rotation;
+            //arObject.transform.localScale = trackedImage.transform.localScale;
         }
         else
         {

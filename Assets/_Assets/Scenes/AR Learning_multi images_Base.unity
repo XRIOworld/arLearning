@@ -929,7 +929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageToPrefabMappings:
   - imageName: 2matoImage
-    prefab: {fileID: 1111472013177863183, guid: 05d9df847a0d34ad99f7f69c56be9ece,
+    prefab: {fileID: 3492950443555141286, guid: a952e8b381c6143499c9940400bcdcb6,
       type: 3}
   - imageName: oneImage
     prefab: {fileID: 7092154109257384754, guid: beef48acd00934d38919847a38f4868d,
