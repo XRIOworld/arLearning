@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18025829, g: 0.22567949, b: 0.30687967, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -144,8 +144,7 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: b7c3db8275a934c0ba74035667491c1c,
     type: 2}
   m_MaxNumberOfMovingImages: 2
-  m_TrackedImagePrefab: {fileID: 4869064300193265995, guid: 1adb6899c171e0c4e94c50a57a6b82cf,
-    type: 3}
+  m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &242335594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,14 +152,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242335588}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a42771ad9257f4cf1b717ffa3f3b766d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   imageToPrefabMappings:
   - imageName: 2matoImage
-    prefab: {fileID: 4869064300193265995, guid: 1adb6899c171e0c4e94c50a57a6b82cf,
+    prefab: {fileID: 6797152929910464440, guid: b83aeb624e4fa4224af47bf11e585efb,
       type: 3}
   - imageName: oneImage
     prefab: {fileID: 7092154109257384754, guid: beef48acd00934d38919847a38f4868d,
@@ -176,7 +175,7 @@ PrefabInstance:
     - target: {fileID: 2512387469002778309, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2512387469002778331, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
@@ -191,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 2512387470319625119, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
@@ -201,13 +200,13 @@ PrefabInstance:
     - target: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047737, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
       propertyPath: m_PlanePrefab
       value: 
-      objectReference: {fileID: 1585201990951412, guid: 886609fc1566e4c27b399f1095d6de18,
+      objectReference: {fileID: 758906769597746159, guid: 001412f723de4401faeb096e1b225609,
         type: 3}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
@@ -267,7 +266,7 @@ PrefabInstance:
     - target: {fileID: 2512387470890420964, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -293,7 +292,7 @@ GameObject:
   - component: {fileID: 702413259}
   - component: {fileID: 702413258}
   - component: {fileID: 702413257}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: AR Session
   m_TagString: Untagged
   m_Icon: {fileID: 0}
