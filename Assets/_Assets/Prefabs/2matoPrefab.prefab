@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4922728473266681527}
   - component: {fileID: 4168299151253618609}
   - component: {fileID: 1751342793958637069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 2matoPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

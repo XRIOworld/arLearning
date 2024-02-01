@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4165976237237475592}
   - component: {fileID: 7127006776858786946}
   - component: {fileID: 1584487269125942911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tooth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7167576270520753999}
   - component: {fileID: 7960003658847986457}
   - component: {fileID: 3105199400357379238}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: stem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2485203145757729092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 2Mato character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2485203145960743884}
   - component: {fileID: 2485203145960743885}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 2485203146492962489}
   - component: {fileID: 2485203146492962488}
   - component: {fileID: 2485203146492962487}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 2485203146559221027}
   - component: {fileID: 2485203146559221029}
   - component: {fileID: 2485203146559221028}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 2485203146724719692}
   - component: {fileID: 2485203146724719691}
   - component: {fileID: 2485203146724719690}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InfoParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 2485203147177999976}
   - component: {fileID: 2485203147177999975}
   - component: {fileID: 2485203147177999974}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -751,7 +751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2485203147284491500}
   - component: {fileID: 2485203147284491501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SectionInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -797,7 +797,7 @@ GameObject:
   - component: {fileID: 2485203147518378452}
   - component: {fileID: 2485203147518378454}
   - component: {fileID: 2485203147518378453}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: XRIO logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -880,7 +880,7 @@ GameObject:
   - component: {fileID: 7084926194635574490}
   - component: {fileID: 971238026933852608}
   - component: {fileID: 5668120530584767252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 6761517534150851771}
   - component: {fileID: 354052338995543549}
   - component: {fileID: 6179651826640804156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1046,7 +1046,7 @@ GameObject:
   - component: {fileID: 5482412213122405438}
   - component: {fileID: 4381524952651273448}
   - component: {fileID: 4322026415209647020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: goggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1130,7 +1130,7 @@ GameObject:
   - component: {fileID: 5203225547090704019}
   - component: {fileID: 5203225547090704020}
   - component: {fileID: 5203225547090704021}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1238,7 +1238,7 @@ GameObject:
   - component: {fileID: 5486001143634045843}
   - component: {fileID: 5486001143634045842}
   - component: {fileID: 5486001143634045853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 2Mato
   m_TagString: hasInfo
   m_Icon: {fileID: 0}
@@ -1373,7 +1373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5069479018345905992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tomatoXRIO_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1416,7 +1416,7 @@ GameObject:
   - component: {fileID: 4420678100053593847}
   - component: {fileID: 7160679320375930810}
   - component: {fileID: 2649731318228656605}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'strap '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1500,7 +1500,7 @@ GameObject:
   - component: {fileID: 8458970852503245786}
   - component: {fileID: 8538304470191410468}
   - component: {fileID: 5294425493794209170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tongue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1583,7 +1583,7 @@ GameObject:
   - component: {fileID: 4760698386413062806}
   - component: {fileID: 8666309212668065244}
   - component: {fileID: 6192031296016969205}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leaves.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1666,7 +1666,7 @@ GameObject:
   - component: {fileID: 5139659462869207971}
   - component: {fileID: 7783818042532148313}
   - component: {fileID: 146017688153011116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leaves.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
