@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -5,11 +6,12 @@ using UnityEngine.XR.ARSubsystems;
 
 public class MultipleImagesTrackingManager : MonoBehaviour
 {
-    [System.Serializable]
-    public class ImageToPrefab
+    [Serializable]
+    public struct ImageToPrefab
     {
         public string imageName;
-        public GameObject prefab;
+        public GameObject mainPrefab;
+        public GameObject spotlightPrefab;
     }
 
     [SerializeField] private ImageToPrefab[] imageToPrefabMappings;
@@ -21,22 +23,28 @@ public class MultipleImagesTrackingManager : MonoBehaviour
     {
         _arTrackedImageManager = GetComponent<ARTrackedImageManager>();
         _arObjects = new Dictionary<string, GameObject>();
-    }
 
-    private void Start()
-    {
-        _arTrackedImageManager.trackedImagesChanged += OnTrackedImageChanged;
-
+        // Initialize the dictionary
         foreach (var mapping in imageToPrefabMappings)
         {
-            GameObject newARObject = Instantiate(mapping.prefab, Vector3.zero, Quaternion.identity);
-            newARObject.name = mapping.prefab.name;
+            GameObject newARObject = Instantiate(mapping.mainPrefab, Vector3.zero, Quaternion.identity);
+            newARObject.name = mapping.mainPrefab.name;
             newARObject.SetActive(false);
             _arObjects.Add(mapping.imageName, newARObject);
+
+            // Spawn spotlight prefab
+            GameObject spotlight = Instantiate(mapping.spotlightPrefab, Vector3.zero, Quaternion.identity);
+            spotlight.SetActive(false);
+            _arObjects.Add(mapping.imageName + "_Spotlight", spotlight);
         }
     }
 
-    private void OnDestroy()
+    private void OnEnable()
+    {
+        _arTrackedImageManager.trackedImagesChanged += OnTrackedImageChanged;
+    }
+
+    private void OnDisable()
     {
         _arTrackedImageManager.trackedImagesChanged -= OnTrackedImageChanged;
     }
@@ -45,10 +53,6 @@ public class MultipleImagesTrackingManager : MonoBehaviour
     {
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
-            if (trackedImage.referenceImage.name == null)
-            {
-                Debug.LogError("Added image has null name.");
-            }
             UpdateTrackedImage(trackedImage);
         }
 
@@ -60,26 +64,32 @@ public class MultipleImagesTrackingManager : MonoBehaviour
         foreach (ARTrackedImage trackedImage in eventArgs.removed)
         {
             _arObjects[trackedImage.referenceImage.name].SetActive(false);
+            _arObjects[trackedImage.referenceImage.name + "_Spotlight"].SetActive(false);
         }
-
-
     }
 
     private void UpdateTrackedImage(ARTrackedImage trackedImage)
     {
         string imageName = trackedImage.referenceImage.name;
         GameObject arObject = _arObjects[imageName];
+        GameObject spotlight = _arObjects[imageName + "_Spotlight"];
 
         if (trackedImage.trackingState != TrackingState.None && trackedImage.trackingState != TrackingState.Limited)
         {
             arObject.SetActive(true);
             arObject.transform.position = trackedImage.transform.position;
             arObject.transform.rotation = trackedImage.transform.rotation;
-            //arObject.transform.localScale = trackedImage.transform.localScale;
+
+            spotlight.SetActive(true);
+            spotlight.transform.position = trackedImage.transform.position;
+            // Optionally, update spotlight rotation and scale if needed
+            spotlight.transform.rotation = trackedImage.transform.rotation;
+            spotlight.transform.localScale = trackedImage.transform.localScale;
         }
         else
         {
             arObject.SetActive(false);
+            spotlight.SetActive(false);
         }
     }
 }

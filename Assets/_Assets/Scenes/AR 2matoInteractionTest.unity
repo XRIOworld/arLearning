@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18025829, g: 0.22567949, b: 0.30687967, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731716, g: 0.13414738, b: 0.121078566, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 09f9acea81b9d46a1aca8c27b76241f7,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: a812d7803608349dabb555c2afccff37,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -159,10 +161,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageToPrefabMappings:
   - imageName: 2matoImage
-    prefab: {fileID: 6797152929910464440, guid: b83aeb624e4fa4224af47bf11e585efb,
+    mainPrefab: {fileID: 4869064300193265995, guid: 1adb6899c171e0c4e94c50a57a6b82cf,
+      type: 3}
+    spotlightPrefab: {fileID: 3098420640225323792, guid: bbdbaef6d133c4a19ab47fbfdaa9d441,
       type: 3}
   - imageName: oneImage
-    prefab: {fileID: 7092154109257384754, guid: beef48acd00934d38919847a38f4868d,
+    mainPrefab: {fileID: 6797152929910464440, guid: b83aeb624e4fa4224af47bf11e585efb,
+      type: 3}
+    spotlightPrefab: {fileID: 8602385637859086910, guid: 08978006fbdea4c47b60b08fdc816900,
       type: 3}
 --- !u!1001 &331264285
 PrefabInstance:
@@ -261,6 +267,11 @@ PrefabInstance:
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512387470528047739, guid: 48cb3fb68c91eb94999fd99957eb0cae,
+        type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470890420964, guid: 48cb3fb68c91eb94999fd99957eb0cae,
