@@ -8506,7 +8506,7 @@ PrefabInstance:
     - target: {fileID: 114251843207838166, guid: 3b19460acec7fad4baeab3db2a8268e1,
         type: 3}
       propertyPath: _licenseKey
-      value: 
+      value: GPLFM-LFPTJ-MZWSJ-UQASC
       objectReference: {fileID: 0}
     - target: {fileID: 114251843207838166, guid: 3b19460acec7fad4baeab3db2a8268e1,
         type: 3}
@@ -9176,7 +9176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1046486802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15027,7 +15027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2058966125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16093,11 +16093,11 @@ SceneRoots:
   - {fileID: 331264285}
   - {fileID: 1673669486}
   - {fileID: 1046486803}
-  - {fileID: 582682771}
-  - {fileID: 975246098}
   - {fileID: 2058966129}
   - {fileID: 283191951}
   - {fileID: 260785485060396896}
+  - {fileID: 582682771}
+  - {fileID: 975246098}
   - {fileID: 1671046897}
   - {fileID: 4508671963999667353}
   - {fileID: 6561694767024214994}
