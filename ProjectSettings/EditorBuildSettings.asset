@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ManoMotion ARFoundation/Scenes/ManoMotionSDKProFeatures.unity
     guid: 2e8ecbb9ea2e340009ac8d7dd6fbd854
+  - enabled: 0
+    path: Assets/_Assets/Scenes/AR ManomotiontestOffical.unity
+    guid: d64264941aadf6443a1cc31db07768e2
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af,
       type: 2}
