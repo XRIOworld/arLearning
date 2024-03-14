@@ -5,12 +5,12 @@ using UnityEngine;
 public class GrabInteraction : MonoBehaviour
 {
     [SerializeField] private GameObject handPointer;
-    //[SerializeField] private GameObject objectToSpawn; // Object to spawn on click gesture
+    [SerializeField] private GameObject objectToSpawn; // Object to spawn on click gesture
     [SerializeField] private string animationClipName; // Name of the animation clip to play
 
     private float skeletonConfidence = 0.00001f;
     private GameObject grabbedObject;
-   // private Vector3 spawnPosition; // Recorded position for spawning objects
+    private Vector3 spawnPosition; // Recorded position for spawning objects
 
     // Update is called once per frame
     void Update()
@@ -26,7 +26,7 @@ public class GrabInteraction : MonoBehaviour
             handPointer.transform.position = positionPointer;
             handPointer.SetActive(true);
 
-/*          if (grabbedObject == null && ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.CLICK)
+            if (grabbedObject == null && ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.CLICK)
             {
                 // Spawn object on click gesture
                 SpawnObject();
@@ -36,8 +36,7 @@ public class GrabInteraction : MonoBehaviour
                 // PlayAnim on TAP_POINTING gesture
                 PlayAnim();
             }
-*/
-            if (grabbedObject == null && ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.GRAB_GESTURE)
+            else if (grabbedObject == null && ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.GRAB_GESTURE)
             {
                 // Attempt to grab object
                 TryGrabObject();
@@ -50,7 +49,7 @@ public class GrabInteraction : MonoBehaviour
         }
     }
 
-/*    void SpawnObject()
+    void SpawnObject()
     {
         if (objectToSpawn != null)
         {
@@ -89,7 +88,7 @@ public class GrabInteraction : MonoBehaviour
             Debug.LogWarning("No object is grabbed to play animation.");
         }
     }
-*/
+
     void TryGrabObject()
     {
         if (grabbedObject == null)

@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
 
 [RequireComponent(typeof(BoxCollider), typeof(Rigidbody))]
 
 public class ObjectManipulator : MonoBehaviour
 {
     //this below is for if I spawn an object
-    //[SerializeField] private GameObject handPointer;
-    //public GameObject objectToSpawn;
-    //private Vector3 spawnPosition; // Recorded position for spawning objects
+    [SerializeField] private GameObject handPointer;
+    public GameObject objectToSpawn;
+    private Vector3 spawnPosition; // Recorded position for spawning objects
 
     [SerializeField] private Material[] materials = new Material[2];
     private Renderer objectRenderer;
@@ -53,7 +54,7 @@ public class ObjectManipulator : MonoBehaviour
             objectRenderer.sharedMaterial = materials[0];
         }
     }
-    /* this is for if I need to spawn object
+    
     void SpawnObject()
      {
          if (objectToSpawn != null)
@@ -70,7 +71,7 @@ public class ObjectManipulator : MonoBehaviour
              Debug.LogWarning("Object to spawn is not assigned!");
          }
      }
-    */
+    
 
 
     private void OnTriggerEnter(Collider other)

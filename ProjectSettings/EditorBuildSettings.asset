@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Assets/Scenes/AR ManomotiontestOffical.unity
     guid: d64264941aadf6443a1cc31db07768e2
+  - enabled: 0
+    path: Assets/_Assets/Scenes/AR Learning_multi images_Base.unity
+    guid: 64c6da43001604605b192178bdb00ec8
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af,
       type: 2}

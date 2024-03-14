@@ -1364,7 +1364,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8189118fa23e9ea42b912b28e8990c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentInteractableCube: {fileID: 559310528}
+  handPointer: {fileID: 1788165988}
+  objectToSpawn: {fileID: 1111472013177863183, guid: 05d9df847a0d34ad99f7f69c56be9ece,
+    type: 3}
 --- !u!1 &1788165988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,7 +1385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &1788165989
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1517,18 +1519,44 @@ PrefabInstance:
     - target: {fileID: 114578675002002822, guid: 84b17eee54c744578b650ff304284bda,
         type: 3}
       propertyPath: gestures
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114578675002002822, guid: 84b17eee54c744578b650ff304284bda,
         type: 3}
       propertyPath: skeleton3d
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114578675002002822, guid: 84b17eee54c744578b650ff304284bda,
+        type: 3}
+      propertyPath: _showSwipes
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114578675002002822, guid: 84b17eee54c744578b650ff304284bda,
+        type: 3}
+      propertyPath: _showPickDrop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114578675002002822, guid: 84b17eee54c744578b650ff304284bda,
+        type: 3}
+      propertyPath: _showGrabRelease
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114578675002002822, guid: 84b17eee54c744578b650ff304284bda,
         type: 3}
       propertyPath: _showClickTriggerGesture
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114578675002002822, guid: 84b17eee54c744578b650ff304284bda,
+        type: 3}
+      propertyPath: triggerObjectPool.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114578675002002822, guid: 84b17eee54c744578b650ff304284bda,
+        type: 3}
+      propertyPath: triggerObjectPool.Array.data[0]
+      value: 
+      objectReference: {fileID: 1111472013177863183, guid: 05d9df847a0d34ad99f7f69c56be9ece,
+        type: 3}
     - target: {fileID: 224952530247401068, guid: 84b17eee54c744578b650ff304284bda,
         type: 3}
       propertyPath: m_Pivot.x
